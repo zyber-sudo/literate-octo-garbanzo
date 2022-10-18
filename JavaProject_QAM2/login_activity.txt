@@ -1,0 +1,32 @@
+
+ *****NEW PROGRAM SESSION  |  06-23-2022  08:57 PM*****  
+
+
+ Log in attempt: 
+
+Username: admin | Date: 2022-06-23 | Time: 08:57 PM
+Password entered: admin >>>  LOG IN SUCCESSFUL
+
+ *****NEW PROGRAM SESSION  |  06-26-2022  02:29 PM*****  
+
+
+ Log in attempt: 
+
+Username: admin | Date: 2022-06-26 | Time: 02:29 PM
+Password entered: admin >>>  LOG IN SUCCESSFUL
+
+ *****NEW PROGRAM SESSION  |  06-26-2022  05:53 PM*****  
+
+
+ Log in attempt: 
+
+Username: admin | Date: 2022-06-26 | Time: 05:53 PM
+Password entered: admin >>>  LOG IN SUCCESSFUL
+
+ *****NEW PROGRAM SESSION  |  06-26-2022  05:55 PM*****  
+
+
+ Log in attempt: 
+
+Username: admin | Date: 2022-06-26 | Time: 05:55 PM
+Password entered: admin >>>  LOG IN SUCCESSFUL

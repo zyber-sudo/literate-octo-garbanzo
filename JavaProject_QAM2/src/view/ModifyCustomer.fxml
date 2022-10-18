@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="450.0" prefWidth="1118.0" style="-fx-background-color: lightcyan;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ModifyCustomerController">
+    <children>
+        <TableView fx:id="modifyCustomerTableView" layoutX="345.0" layoutY="23.0" onMouseClicked="#onMouseClickedModCustomer" prefHeight="336.0" prefWidth="750.0">
+            <columns>
+                <TableColumn fx:id="modifyCustomerIdCol" prefWidth="75.0" text="Customer ID" />
+                <TableColumn fx:id="modifyCustomerNameCol" prefWidth="75.0" text="Customer Name" />
+                <TableColumn fx:id="modifyCustomerAddressCol" prefWidth="184.0" text="Address" />
+                <TableColumn fx:id="modifyCustomerZipCol" prefWidth="115.0" text="Postal Code" />
+                <TableColumn fx:id="modifyCustomerLocationCol" prefWidth="75.0" text="Location" />
+                <TableColumn fx:id="modifyCustomerDivisionCol" prefWidth="75.0" text="Division" />
+            </columns>
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+            </columnResizePolicy>
+        </TableView>
+        <HBox alignment="CENTER" layoutX="903.0" layoutY="366.0" prefHeight="70.0" prefWidth="192.0" spacing="23.0">
+            <children>
+                <Button mnemonicParsing="false" onAction="#onActionModifyBtn" prefWidth="55.0" text="Modify" />
+                <Button mnemonicParsing="false" onAction="#onActionCancelBtn" prefWidth="55.0" text="Cancel" />
+            </children>
+        </HBox>
+        <VBox alignment="TOP_RIGHT" layoutX="31.0" layoutY="52.0" prefHeight="336.0" prefWidth="103.0" spacing="30.0">
+            <children>
+                <Label layoutX="24.0" layoutY="10.0" text="Customer ID:" />
+                <Label text="Customer Name:" />
+                <Label text="Address:" />
+                <Label text="Postal Code:" />
+                <Label text="Phone:" />
+                <Label text="Country:" />
+                <Label text="Division:" />
+            </children>
+        </VBox>
+        <VBox layoutX="148.0" layoutY="51.0" prefHeight="342.0" prefWidth="136.0" spacing="21.0">
+            <children>
+                <TextField fx:id="modifyCustomerIdText" disable="true" layoutX="10.0" layoutY="10.0" />
+                <TextField fx:id="modifyCustomerNameTxt" />
+                <TextField fx:id="modifyCustomerAddressTxt" layoutX="10.0" layoutY="10.0" />
+                <TextField fx:id="modifyCustomerZipTxt" layoutX="10.0" layoutY="35.0" />
+                <TextField fx:id="modifyCustomerPhoneTxt" layoutX="10.0" layoutY="60.0" />
+                <ComboBox fx:id="modifyCustomerCountryCBox" onAction="#onActionSelectCountry" prefWidth="150.0" />
+                <ComboBox fx:id="modifyCustomerDivisionCBox" layoutX="10.0" layoutY="110.0" prefWidth="150.0" />
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

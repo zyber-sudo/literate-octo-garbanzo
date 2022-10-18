@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="390.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ModifyAppointmentController">
+    <children>
+        <Label layoutX="62.0" layoutY="50.0" text="Appointment Name: " />
+        <Label layoutX="110.0" layoutY="98.0" text="Description:" />
+        <Label layoutX="71.0" layoutY="208.0" text="Appointment Type:" />
+        <TextField fx:id="modifyAppointmentNameTxt" layoutX="195.0" layoutY="46.0" />
+        <TextField fx:id="modifyAppointmentTypeTxt" layoutX="195.0" layoutY="204.0" />
+        <TextArea fx:id="modifyAppointmentDescriptionTxt" layoutX="195.0" layoutY="98.0" prefHeight="74.0" prefWidth="190.0" />
+        <Label layoutX="122.0" layoutY="269.0" text="Customer:" />
+        <ComboBox fx:id="modifyAppointmentCustomerCBox" layoutX="195.0" layoutY="265.0" prefWidth="150.0" />
+        <Label layoutX="477.0" layoutY="50.0" text="Location:" />
+        <ComboBox fx:id="modifyAppointmentLocationCBox" layoutX="550.0" layoutY="46.0" prefWidth="150.0" />
+        <Label layoutX="477.0" layoutY="107.0" text="Contact:" />
+        <ComboBox fx:id="modifyAppointmentContactCBox" layoutX="550.0" layoutY="103.0" prefWidth="150.0"/>
+        <Label layoutX="477.0" layoutY="172.0" text="Start Date:"/>
+        <Label layoutX="649.0" layoutY="172.0" text="End Date:"/>
+        <DatePicker fx:id="modifyAppointmentEndDateDP" layoutX="642.0" layoutY="196.0" prefHeight="25.0"
+                    prefWidth="102.0"/>
+        <DatePicker fx:id="modifyAppointmentStartDateDP" layoutX="474.0" layoutY="196.0" prefHeight="25.0"
+                    prefWidth="102.0"/>
+        <Label layoutX="477.0" layoutY="236.0" text="Start Time:"/>
+        <Label layoutX="643.0" layoutY="236.0" text="End Time:"/>
+        <Label layoutX="114.0" layoutY="323.0" text="Current User:"/>
+        <Label fx:id="modifyAppointmentUserLbl" layoutX="200.0" layoutY="323.0" text="Test_User"/>
+        <Button layoutX="741.0" layoutY="328.0" mnemonicParsing="false" onAction="#onActionCancelBtn" text="Cancel"/>
+        <Button layoutX="586.0" layoutY="328.0" mnemonicParsing="false" onAction="#onActionModifyBtn"
+                text="Modify Appointment"/>
+        <ComboBox fx:id="modifyAppointmentStartTimeCBox" layoutX="474.0" layoutY="257.0" prefHeight="25.0"
+                  prefWidth="102.0"/>
+        <ComboBox fx:id="modifyAppointmentEndTimeCBox" layoutX="642.0" layoutY="257.0" prefHeight="25.0"
+                  prefWidth="102.0"/>
+        <Label fx:id="timeLbl" layoutX="290.0" layoutY="323.0" text="Current User:"/>
+    </children>
+</AnchorPane>
